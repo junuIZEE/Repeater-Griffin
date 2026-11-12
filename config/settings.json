@@ -1,0 +1,30 @@
+{
+  "app_name": "Repeater Griffin",
+  "iperf3": {
+    "server_ip": "192.168.1.100",
+    "port": 5201,
+    "duration_sec": 20,
+    "repetitions": 3,
+    "parallel_streams": 1,
+    "executable_path": "iperf3",
+    "timeout_buffer_sec": 15
+  },
+  "ping": {
+    "target": "192.168.1.100",
+    "packet_count": 10,
+    "timeout_ms": 2000
+  },
+  "placement": {
+    "candidate_positions": ["P1", "P2", "P3", "P4", "P5", "P6"],
+    "tie_threshold_pct": 5.0
+  },
+  "paths": {
+    "raw_data_dir": "data/raw",
+    "processed_data_dir": "data/processed",
+    "graphs_dir": "results/graphs",
+    "reports_dir": "results/reports",
+    "raw_csv_filename": "raw_measurements.csv",
+    "summary_csv_filename": "placement_summaries.csv"
+  }
+}
+
